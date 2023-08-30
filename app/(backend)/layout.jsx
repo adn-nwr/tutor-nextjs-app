@@ -1,27 +1,29 @@
+import Link from "next/link";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
         <ul>
           <li>
-            <a href="/">Halaman Utama</a>
+            <Link href="/">Halaman Utama</Link>
           </li>
           <li>
-            <a href="/tentang">Tentang</a>
+            <Link href="/tentang">Tentang</Link>
           </li>
           <li>
-            <a href="/pengaturan">Pengaturan</a>
+            <Link href="/pengaturan">Pengaturan</Link>
             <ul>
               <li>
-                <a href="/pengaturan/pengguna">Pengguna</a>
+                <Link href="/pengaturan/pengguna">Pengguna</Link>
               </li>
               <li>
-                <a href="/pengaturan/umum">Umum</a>
+                <Link href="/pengaturan/umum">Umum</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/login">Login Pengguna</a>
+            <Link href="/login">Login Pengguna</Link>
           </li>
         </ul>
         {children}
