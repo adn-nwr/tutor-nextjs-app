@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Public WWW",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
